@@ -1,0 +1,31 @@
+.navbutton{
+    background-color: #7fff00;
+    padding: 25px 11px;
+    width: 100px;
+    text-align: center;
+    display: inline-block; /*IT WILL STAY NEXT TO EACH OTHER IN ROW, NOT EGZMAS ALATT*/
+    position: relative; /*main manu will stay in one row, stack in one place*/
+}
+
+/*this turns the drop down off , when is not used*/
+.drop-downbox{
+    display: none;
+    position: absolute; /*this guys in secound aline under the mane menu in one row*/
+    z-index: 99; /*should be more always than 1. keeps in order the drop down menu*/
+    padding-top: 30px; /*better to use paddig , because its works inside the box. more connection*/
+    margin-left: -10px; /*I can go minus in margin if i want be in same line down . Items be under the prodect is same line*/
+}
+
+/*this turns the drop down on , when is not used by hover*/
+.navbutton:hover .drop-downbox{
+    display: block;
+}
+
+.drop-downbox .navbutton{ /*change the Item1-2-3 background color */
+    background-color: cornflowerblue;
+}
+
+.drop-downbox .navbutton:hover{
+    background-color: crimson;/* each item will change to red color if click on them */
+    transition-duration: 500ms; /*for how long do i want this*/
+}

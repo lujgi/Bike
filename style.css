@@ -1,0 +1,250 @@
+html{
+    background-image: linear-gradient(#FC5E55 ,#FA4083);
+}
+body{
+    /*BACKROUND-IMAGE:LINEAR-GRADIENT  MIX UP MORE COLORS SHADOW*/
+    /*WEBSITES FOR LINEAR GRADIENTS: DIBBBLE.COM, BAHANCE.COM, COLORZILLA.COM/Extencion/ColorPicker*/
+    background-image: url(img/image-lion-background.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family:'Roboto', sans-serif; /*CHANGE TYPE LETTERS FONT FAMILY GOOGLE   */
+    color: white;
+    font-size:1.125rem; /*BETTER TO USE REM THAN PX. GOOGLE USE REM AS WELL
+   1PX=0.0625REM!!!!!! 48px=48*0.0625=3rem */
+}
+
+.container{
+    width: 1024px;
+    min-height: 300px;  /*MIN-HEIGHT TEXT FIT IN BOX*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px; /*UP HAS 20px DISTANCE FORM THE TOP*/
+    padding-bottom: 20px; /*DOWN HAS 20px DISTANCE FORM THE BOTTOM*/
+    border-bottom:1px solid lightgrey;/*line on top . we do border bec its more elegant*/
+}
+
+main{
+    min-height: 300px;
+    display: flex; /*PUT THE BOXES IN ONE ROW*/
+    align-items: center; /*PUT IN CENTER THE ITEMS WITH TEXT*/
+}
+
+.main2{
+    min-height: 20px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+
+.cards{
+    display: flex; /*PUT THE BOXES IN ONE ROW*/
+    justify-content: space-between; /*DO SPACE BETWEEN BOXES*/
+    text-align: center; 
+}
+
+
+.card1{
+    background-image: url(img/image-background-card1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.9);/*leave SHADOW by BOX. ALWAYS 4TH  NUMBER GIVES A COLOR*/
+}
+.card2{
+    background-image: url(img/image-background-card2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.9);
+}
+.card3{
+    background-image: url(img/image-background-card3.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.9);
+}
+
+.herobox1{
+    flex: 2; /*BOX RATE 2:1 , 2 TIMES BOX */
+    padding-right: 100px;/*PUSH THE TEXT RIGHT*/
+}
+
+.herobox2{
+    flex: 1; /*BOX RATE 1:1 , 1 TIMES BOX */
+}
+
+h1{
+    font-size:3.25rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem; /*SPACE BETWEEN PHARAGRAF*/
+    text-shadow: 0px 2px 2px rgb(0, 0, 0, 0.9); /*LEAVE BIT OF SHADOW IN TEXT*/
+
+}
+
+h2{
+    font-size:2rem ;/*letter size*/
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+p{
+    line-height: 1.75rem ; /*Line SPACEING*/
+    margin-bottom:0.25rem ; /*SPACE BETWEEN PHARAGRAF*/
+}
+
+.cards p{ /*P tag INDSIDE THE CARDS*/
+    font-size: 0.85rem;
+    line-height: 1.2rem ; /*Line SPACEING*/
+    margin-top: 10px;
+}
+
+.card1, .card2, .card3{
+    padding: 30px 30px 30px 20px; /*TOP RIGHT BOTTOM LEFT*/
+    box-sizing: border-box; /*LEAVE SPACE BETWEEN BOXS*/
+}
+
+.icon1{
+    font-size: 100px; 
+}
+
+.icon2{
+    font-size: 100px;  
+}
+.icon3{
+    font-size: 100px;   
+}
+
+.cards a{ /*WHEN I PRESS THE BUTTOM (BOOK ONLINE) WILL STAY ALAWYS WHITE AND NO DECORATION*/
+    color: white;
+    text-decoration: none;
+}
+
+.mybutton{
+    background-color: white;
+    color: #FA4083 ;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px; /*IF TOP=BOTTOM, RIGHT=LEFT HAS SAME SIZE ENOUGHT HAVE ONLY 2 PADDING*/
+    border-radius: 12px; /*button be ROUNDED . I CAN EVEN ADD 4 PADDINGS, WILL HAVE DIFFERENT SHAPE.*/
+}
+
+.mybutton:hover{
+    background-color: turquoise; /*change the buttom color. SUPER COOL!!*/
+}
+
+a.mybutton{/*IN A tag  INSIDE mybutton, NO SPACE BETWEEN*/
+    display: inline-block; /*BLOCK LEVEL STAFF/SOMETHING ITS IN-LINE/ON-LINE*/
+    padding-top: 20px;
+}
+
+nav a.mybutton{/*inside nav a.mybutton*/
+    margin-left: 30px;    
+}
+
+.navbutton{
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    display: inline-block; /*Prepare for DROPDOWN MENU*/
+    position: relative; /*main menu will stay in one row, stack in one place activate drop down in an order one line down*/
+}
+
+.testamonials{
+    display: flex; /*PUT THE BOXES IN ONE ROW*/
+    flex-wrap: wrap; /*does 4 boxes in order 4eshazat*/
+    justify-content: space-between; /*DO SPACE BETWEEN BOXES*/
+    margin-bottom: 100px;
+}
+
+.tbox{
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white; /*border-width/border-style/color/ LIKE THIS IS IN ORDER , BUT IN SHORTER WAY*/
+    box-sizing: border-box;
+    margin-top: 50px; /*space between the top. so alll boxex will have a space from the top*/
+}   
+/*CCS TRICK.COM!!!*/
+
+/*.tbox :last-child{ ACTIVATE LAST PART OF THE CLASS
+    ALWAZS LEAVE A SPACE BETWEEN :last-child
+    font-size: .8rem; 
+} */
+
+/* THIS IS MORE SPACIFIC, ATIVATE LAST PART OF THE CLASS !!! */
+.tbox p:last-of-type{ 
+    color: rgba(197, 194, 194, 0.479);
+} 
+
+.dropdown{ 
+    display: none; /*this turns the drop down off , when is not used*/
+    position: absolute; /*this guys in secound aline under the mane menu in one row*/
+    z-index: 1; /*should be more always than 1. keeps in order the drop down menu*/
+    padding-top: 20px ; /*push the box from the top*/
+    text-align: center;
+}
+
+.navbutton:hover .dropdown{ /*this turns the drop down on , when is not used by hover*/
+    display: block;
+}
+
+.dropdown .navbutton{
+    background-color: white;
+    width: 98px;
+    margin-left: -25px; /*I can go minus in margin if i want be in same line down . Items be under the prodect is same line*/
+  }
+
+.dropdown .navbutton a{
+  color: #fc055f
+}
+
+.dropdown .navbutton:hover{
+    background-color: rgba(219, 218, 231, 0.658); /* each item will change to red color if click on them */
+    transition-duration: 500ms; /*for how long do i want this*/
+}
+
+.inputwrapper{
+    margin-bottom: 20px;
+}
+
+input[type=text], input[type=email], textarea{
+    padding: 12px 20px;
+    width: 100% ;
+    font-family: 'Roboto', sans-serif; /*CHANGE TYPE LETTERS FONT FAMILY GOOGLE   */
+    font-size: 0.85rem;
+    box-sizing: border-box;
+}
+
+.newline{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.push{
+    margin-right: 20px;
+}
+
+input[type=radio]{
+    margin-right: 10px;
+}
+
+form{
+    margin: 40px 0px;
+}
